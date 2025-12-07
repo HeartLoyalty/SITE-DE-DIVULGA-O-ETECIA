@@ -105,6 +105,14 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scrolled");
   }
 });
+window.addEventListener("scroll", () => {
+const dashBoard  = document.getElementById("inicio")
+if(window.scrollY > 80){
+    dashBoard.classList.add("scrol");
+}else{
+    dashBoard.classList.remove("scrol");
+}
+})
 
 tableLeftBtn.addEventListener('click', switchModulesDown);
 tableRightBtn.addEventListener('click', switchModulesUp);
